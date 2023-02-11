@@ -10,9 +10,11 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     //console.log(email, password)
     //step 4 verify pass
     if (email === 'hoga@x.com' && password === 'hoga') {
-        console.log('valid user')
+        //console.log('valid user')
+        window.location.href = 'dashboard.html'
     }
     else{
-        console.log('invalid user')
+        alert('invalid user')
+        //console.log('invalid user')
     }
 })
