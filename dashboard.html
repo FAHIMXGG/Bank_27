@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,13 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
+
     <head>
-        <h1 class="font-medium text-3xl text-center mt-9">Welcome to <span class="text-fuchsia-400">Hoga Bank</span> </h1>
-        <h1 class="font-medium text-3xl text-center mt-9"> <span class="text-fuchsia-400">Hoga</span>  Dashboard</h1>
+        <h1 class="font-medium text-3xl text-center mt-9">Welcome to <span class="text-fuchsia-400">Hoga Bank</span>
+        </h1>
+        <h1 class="font-medium text-3xl text-center mt-9"> <span class="text-fuchsia-400">Hoga</span> Dashboard</h1>
         <h1 class="font-medium text-center mt-3">Good morning <span class="text-fuchsia-400">Hoga</span> </h1>
     </head>
     <main>
@@ -18,18 +22,46 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto ">
                 <div class="bg-cyan-200  p-10 rounded">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h2 class="font-medium">$00</h2>
+                    <h2  class="font-medium">$ <span id="deposit">00</span> </h2>
                 </div>
                 <div class="bg-cyan-300  p-10 rounded">
                     <h4 class="text-2xl">Withdraw</h4>
-                    <h2 class="font-medium">$00</h2>
+                    <h2  class="font-medium">$<span id="withdraw">00</span> </h2>
                 </div>
                 <div class="bg-cyan-400  p-10 rounded">
                     <h4 class=" text-2xl">Balance</h4>
-                    <h2 class="font-medium">$1130</h2>
+                    <h2  class="font-medium">$<span id="total">1130</span> </h2>
                 </div>
             </div>
         </section>
+
+        <section class="mt-6">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto ">
+                <div class="bg-cyan-200  p-10 rounded">
+                    <h4 class="text-2xl mb-4">Deposit</h4>
+                    <input class="text-zinc-800 font-medium  w-9/12 text-center  rounded h-8" type="text" name=""
+                        id="deposit-amount" placeholder="$ Amount you want to Deposit"> <br>
+
+                    
+                    <button id="btn-deposit"
+                        class="ml-44 mb-4 mt-4 bg-slate-300 px-8 py-2 rounded hover:bg-slate-600 font-medium hover:text-cyan-200">Deposit</button>
+                </div>
+                <div class="bg-cyan-300  p-10 rounded">
+                    <h4 class="text-2xl mb-4">Withdraw</h4>
+                    <input class="text-zinc-800 font-medium  w-9/12 text-center  rounded h-8" type="text" name=""
+                        id="withdraw-amount" placeholder="$ Amount you want to Withdraw"> <br>
+
+                    
+                    <button id="btn-withdraw"
+                        class="ml-44 mb-4 mt-4 bg-slate-300 px-8 py-2 rounded hover:bg-slate-600 font-medium hover:text-cyan-200">Withdraw</button>
+                </div>
+
+
+            </div>
+        </section>
     </main>
+
+    <script src="./js/money.js"></script>
 </body>
+
 </html>
